@@ -1,6 +1,9 @@
 def duza_liczba(lista1):
-    zbior = set(lista1)
-    lista = sorted(list(zbior),reverse=True)
+    lista = []
+    for x in lista1:
+        if x not in lista:
+            lista.append(x)
+    lista = sorted(lista, reverse=True)
     s = 0
     for i in lista:
         s = s * 10 + i
